@@ -1,0 +1,60 @@
+---
+title: "R Markdown in action"
+subtitle: "Using Slidy"
+author: Josselin Noirel
+date: Feb 2020
+output:
+  revealjs::revealjs_presentation:
+    theme: simple
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, comment=NULL)
+library("DT")
+```
+
+# R Markdown
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+## R Markdown
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+# Display modes
+
+Bunch of display modes
+
+## Display modes
+
+The following single character keyboard shortcuts enable alternate display modes:
+
+* 'f': enable fullscreen mode.
+* 'o': enable overview mode.
+
+## Slide with R output
+
+```{r cars, echo = TRUE}
+datatable(cars)
+```
+
+# Slide with code
+
+## Python
+
+```python
+import numpy as np
+π = np.pi
+
+x = np.linspace(0, 2 * π)
+y = np.exp(x)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+

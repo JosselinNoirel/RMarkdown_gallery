@@ -1,0 +1,49 @@
+---
+title: "R Markdown in action"
+subtitle: "Using ioslides"
+author: Josselin Noirel
+date: Feb 2020
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, comment=NULL)
+library("DT")
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with bullets | Navigation
+
+* 'f': enable fullscreen mode
+* 'w': toggle widescreen mode
+* 'o': enable overview mode
+* 'h': enable code highlight mode
+* 'p': show presenter notes
+
+## Slide with R output
+
+```{r cars, echo = TRUE}
+datatable(cars)
+```
+
+## Slide with code | and a subtitle
+
+```python
+import numpy as np
+π = np.pi
+
+x = np.linspace(0, 2 * π)
+y = np.exp(x)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
