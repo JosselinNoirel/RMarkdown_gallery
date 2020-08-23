@@ -20,10 +20,10 @@ Here's a quick overview of some of the most appealing options.
 **Notebooks.** In addition to slideshows, here are a few illustrations of what can be achieved with other themes:
 
 * The [rmdformats package](https://github.com/juba/rmdformats) by Julien Barnier:
-    * The [readthedown](rmd_materials/rmd_readthedown) theme
-    * The [material](rmd_materials/rmd_materials) theme
-    * The [clean](rmd_materials/rmd_clean) theme
-    * The [docco](rmd_materials/rmd_docco) theme
+    * The [readthedown](rmd_readthedown/rmd_readthedown) theme
+    * The [material](rmd_material/rmd_material) theme
+    * The [clean](rmd_clean/rmd_clean) theme
+    * The [docco](rmd_docco/rmd_docco) theme
 
 To do:
 
