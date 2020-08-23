@@ -1,10 +1,7 @@
 ---
-title: "The rmdformats package"
-subtitle: "The material theme"
-author: Josselin Noirel
-date: "`r Sys.Date()`"
+title: "The rmdformats: docco"
 output:
-  rmdformats::material:
+  rmdformats::html_docco:
     highlight: kate
 ---
 

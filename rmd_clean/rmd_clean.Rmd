@@ -1,10 +1,10 @@
 ---
 title: "The rmdformats package"
-subtitle: "The material theme"
+subtitle: "The clean theme"
 author: Josselin Noirel
 date: "`r Sys.Date()`"
 output:
-  rmdformats::material:
+  rmdformats::html_clean:
     highlight: kate
 ---
 
