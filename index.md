@@ -1,6 +1,7 @@
 ---
 title: Creating slideshows with R Markdown
 author: Joss Noirel
+layout: page
 created: 12-05-2020
 updated: 12-05-2020
 ---
@@ -14,6 +15,10 @@ Here's a quick overview of some of the most appealing options.
 * Using [reveal_js](reveal_js)
 * Using [slidy](slidy)
 * Using [tufte](tufte)
+
+In addition to slideshows, here are a few illustrations of what can be achieved with other themes:
+
+* The [material](rmd_materials/rmd_materials) theme of the rmdformats
 
 To do:
 

@@ -1,0 +1,65 @@
+---
+title: "The rmdformats"
+author: Josselin Noirel
+date: "`r Sys.Date()`"
+output:
+  rmdformats::material:
+    highlight: kate
+---
+
+```{r setup, echo=FALSE, cache=FALSE}
+library("knitr")
+library("rmdformats")
+
+## Global options
+options(max.print="75")
+opts_chunk$set(echo=FALSE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NULL,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+```
+
+# Introduction
+
+The rmdformats documents all sport a navigation bar that make them more appropriate for longer documents.  The "material" theme, that we use here, in particular reduces the clutter by creating separate pages for every section.
+
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+$$ e^{i\pi} + 1 = 0 $$ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+# Resources
+
+More information can be found here:
+
+* The [rmdformats package](https://github.com/juba/rmdformats) on Julien Barnier's GitHub page
+* The [community formats chapter](https://bookdown.org/yihui/rmarkdown/rmdformats.html) in [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+# Some R code
+
+By default, the R code isn't displayed but this can be easily changed of course.
+
+```{r}
+library("tidyverse")
+theme_set(theme_bw())
+```
+
+```{r}
+iris %>% as_tibble() %>% head(4)
+```
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+```{r}
+ggplot(iris,
+       aes(Sepal.Length, Sepal.Width, size=Petal.Length, colour=Species)) + geom_point()
+```
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
