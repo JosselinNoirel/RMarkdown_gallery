@@ -1,0 +1,53 @@
+---
+title: "Showcasing Shower"
+author: "Josselin Noirel"
+output: rmdshower::shower_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, comment=NULL)
+```
+
+## Introduction
+
+<p class="double">
+The Shower slideshow is very neat and elegant.  It allows for double-column designs using `<p class="double">...</p>`.
+
+- Slide titles use second-level sections `## Introduction`
+- You can also start a new slide with `---`
+
+The rest of it is pretty standard.
+</p>
+
+## Let's blah blah blah for a moment
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+$$ e^{i\pi} + 1 = 0 $$ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Resources
+
+More information can be found here:
+
+* The [rmdshower package](https://github.com/MangoTheCat/rmdshower/) by Mango Solutions
+* In particular, have a look at the [example](https://github.com/MangoTheCat/rmdshower/blob/master/inst/examples/skeleton.Rmd)
+* The [community formats chapter](https://bookdown.org/yihui/rmarkdown/rmdformats.html) in [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+## Some R code
+
+By default, the R code isn't displayed but this can be easily changed of course.
+
+```{r, message=FALSE, warning=FALSE}
+library("tidyverse")
+theme_set(theme_bw())
+```
+
+```{r}
+iris %>% as_tibble() %>% head(4)
+```
+
+## Graphics too…
+
+```{r, echo=FALSE}
+ggplot(iris,
+       aes(Sepal.Length, Sepal.Width, size=Petal.Length, colour=Species)) + geom_point()
+```
