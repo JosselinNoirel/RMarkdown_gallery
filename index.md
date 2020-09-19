@@ -27,6 +27,7 @@ In progress
 * The (tweaked) [default](default_tweaked) document
 * Using [prettydoc](prettydoc)
 * Using [tufte](tufte)
+* Using [tint](tint)
 * The [rmdformats package](https://github.com/juba/rmdformats) by Julien Barnier:
     * Check out the [readthedown](rmd_readthedown/rmd_readthedown) theme
     * Check out the [material](rmd_material/rmd_material) theme
@@ -37,3 +38,4 @@ To do:
 
 * default style
 * Tufte-inspired documents
+* [xaringanextra](https://pkg.garrickadenbuie.com/xaringanExtra/#/README?id=xaringanextra)?

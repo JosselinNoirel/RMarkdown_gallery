@@ -1,0 +1,39 @@
+---
+title: "Tint Is Not Tufte"
+subtitle: "An implementation in R Markdown"
+author: "Josselin Noirel"
+date: "`r Sys.Date()`"
+output: tint::tintHtml
+---
+
+```{r setup, include=FALSE}
+library(tint)
+# invalidate cache when the package version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'))
+options(htmltools.dir.version = FALSE)
+```
+
+# Demonstrating Tufte
+
+```{r, message=FALSE, warning=FALSE}
+library("ggplot2")
+library("DT")
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see the RStudio website^[Here's the [link](http://rmarkdown.rstudio.com/)].
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+datatable(mtcars)
+```
+
+## Including Plots
+
+```{r pressure, echo=FALSE, fig.margin = TRUE, fig.cap = "MPG vs horsepower, colored by transmission.", }
+qplot(pressure$temperature, pressure$pressure)
+```
+
+You can also embed plots, for example. Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
