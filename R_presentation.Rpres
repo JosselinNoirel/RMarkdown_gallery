@@ -1,0 +1,49 @@
+R presentation
+========================================================
+author: Josselin Noirel
+date: `r format(Sys.time(), '%d %B, %Y')`
+autosize: true
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, comment=NULL)
+library("ggplot2")
+```
+
+First Slide
+========================================================
+
+For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+
+You get a presentation with a sligthly different personality by
+clicking on File > New File > R Presentation.
+
+* Let's face it, it's pretty basic
+* But it lets you preview the result directly in RStudio
+
+Formats
+========================================================
+
+* You can generate a Markdown file by clicking "Preview"
+* You can save a HTML version: More > Save as webpage in the Presentation tab
+
+Slide With Code
+========================================================
+
+```{r cars, echo = TRUE}
+head(cars, 3)
+```
+
+```Python
+import numpy as np
+π = np.pi
+
+x = np.linspace(0, 2 * π)
+y = np.exp(x)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+ggplot(cars, aes(speed, dist)) + geom_point()
+```
